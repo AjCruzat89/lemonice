@@ -58,6 +58,10 @@ body{
         top: 25px;
         right: 12px;
     }
+
+    .aboutContent{
+        padding: unset;
+    }
 }
 
 
@@ -215,6 +219,13 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-#gallery img{
-    border-radius: 20px !important;
+.aboutContent{
+    text-align: justify !important;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 1200px) {
+    .aboutContent{
+        padding: 0px 200px;
+    }
 }

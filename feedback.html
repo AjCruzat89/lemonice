@@ -4,30 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LemoNice</title>
+    <title>LemoNice | Feedback</title>
     <link rel="stylesheet" href="feedback.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar position-fixed w-100">
+    <nav class="navbar position-fixed w-100" data-aos="fade-down">
         <div class="d-flex justify-content-start flex-grow-1">
             <img src="./Current_Logo.png" alt="">
         </div>
 
         <div class="d-none d-md-flex flex-grow-1 gap-4 justify-content-center align-items-center" id="menuLists">
             <i class="d-flex d-md-none fas fa-times"></i>
-            <a class="active" href="./index.html">Home</a>
-            <a href="#">About</a>
-            <a href="./feedback.html">Feedback</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a class="active" href="./feedback.html">Feedback</a>
+            <a href="./contact.html">Contact</a>
         </div>
 
         <div class="menu d-flex d-lg-flex justify-content-end flex-grow-1">
@@ -39,9 +37,9 @@
     <div class="content d-flex flex-column">
         <div class="d-flex flex-column flex-lg-row align-items-center vh-100 pt-5">
             <div class="col d-flex align-items-center">
-                <div class="content1 d-flex flex-column">
+                <div class="content1 d-flex flex-column" data-aos="fade-right">
                     <h1>Lemon<span style="color: #E8C407;">Nice</span></h1>
-                    <a href="#" style="margin-left: 5px;">About Us</a>
+                    <a href="./about.html" style="margin-left: 5px;">About Us</a>
                     <div class="d-flex flex-row gap-3" style="margin-top: auto;">
                         <i class="bi bi-facebook"></i>
                         <i class="bi bi-twitter-x"></i>
@@ -51,16 +49,16 @@
             </div>
 
 
-            <div class="mainPhoto col d-none d-lg-flex">
+            <div class="mainPhoto col d-none d-lg-flex" data-aos="fade-left">
                 <img class="img-fluid" src="./386502337_122127749180025501_7484310455104773822_n.png" alt="">
             </div>
         </div>
 
-        <div class="d-flex justify-content-center mt-5" id="title">
+        <div class="d-flex justify-content-center mt-5" id="title" data-aos="fade-up">
             <h1>USER REVIEWS</h1>
         </div>
 
-        <div class="swiper mt-5">
+        <div class="swiper mt-2" data-aos="fade-up">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="d-flex flex-column">
@@ -158,26 +156,26 @@
             </div>
         </div>
 
-        <div class="swiperControls d-flex justify-content-center mt-5 gap-3">
+        <div class="swiperControls d-flex justify-content-center mt-5 gap-3" data-aos="fade-up">
             <i class="bi-caret-left-fill"></i>
             <i class="bi-caret-right-fill"></i>
         </div>
 
-        <div class="mt-5 d-flex justify-content-center" id="title">
+        <div class="mt-5 d-flex justify-content-center" id="title" data-aos="fade-up">
             <h1>Galleries</h1>
         </div>
 
-        <div class="my-5 row row-cols-2 row-cols-md-3 row-cols-lg-5 g-2" id="gallery">
-            <img class="img-fluid rounded" src="./image/1.jpg" alt="">
+        <div class="mt-2 mb-4 mb-sm-5 row row-cols-2 row-cols-md-3 row-cols-lg-5 g-2" id="gallery" data-aos="fade-up">
+            <img class="img-fluid" src="./image/1.jpg" alt="">
             <img class="img-fluid" src="./image/2.jpg" alt="">
             <img class="img-fluid" src="./image/3.jpg" alt="">
-            <img class="img-fluid rounded" src="./image/1.jpg" alt="">
+            <img class="img-fluid" src="./image/1.jpg" alt="">
             <img class="img-fluid" src="./image/2.jpg" alt="">
             <img class="img-fluid" src="./image/3.jpg" alt="">
-            <img class="img-fluid rounded" src="./image/1.jpg" alt="">
+            <img class="img-fluid" src="./image/1.jpg" alt="">
             <img class="img-fluid" src="./image/2.jpg" alt="">
             <img class="img-fluid" src="./image/3.jpg" alt="">
-            <img class="img-fluid rounded" src="./image/1.jpg" alt="">
+            <img class="img-fluid" src="./image/1.jpg" alt="">
             <img class="img-fluid" src="./image/2.jpg" alt="">
             <img class="img-fluid" src="./image/3.jpg" alt="">
         </div>
@@ -194,7 +192,7 @@
                     <a href="#">Contact</a>
                 </div>
             </div>
-            <div class="col mt-4 mt-md-0">
+            <div class="col mt-4 mt-sm-0">
                 <div class="d-flex flex-column">
                     <h1>CONTACTS</h1>
                     <h2>Phone Number: 09021321312</h2>
@@ -266,6 +264,14 @@
     </script>
 
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
